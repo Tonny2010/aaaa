@@ -30,7 +30,7 @@ document.addEventListener("keydown", (event) => {
 // Gravidade
 function gameLoop(){
 
-  velocityY -= 1;
+  velocityY -= 4;
 
   positionY += velocityY;
 
