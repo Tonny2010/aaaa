@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Quadrado Saltitante</title>
+  <title>teste</title>
 
   <style>
     *{
@@ -66,7 +66,7 @@
       }
 
       // Pulo
-      if(event.code === "Space" && !isJumping){
+      if(event.code === "ArrowUp" && !isJumping){
         velocityY = 18;
         isJumping = true;
       }
@@ -76,8 +76,8 @@
 
     // Gravidade
     function gameLoop(){
-
-      velocityY -= 1;
+ 
+      velocityY -= 1 ;
 
       positionY += velocityY;
 
