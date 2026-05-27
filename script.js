@@ -11,15 +11,15 @@ let positionY = groundHeight;
 document.addEventListener("keydown", (event) => {
 
   if(event.code === "ArrowRight"){
-    positionX += 20;
+    positionX += 40;
   }
 
   if(event.code === "ArrowLeft"){
-    positionX -= 20;
+    positionX -= 40;
   }
 
   // Pulo
-  if(event.code === "Space" && !isJumping){
+  if(event.code === "ArrowUp" && !isJumping){
     velocityY = 18;
     isJumping = true;
   }
